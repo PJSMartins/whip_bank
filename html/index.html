@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>whip_bank</title>
+    <link rel="stylesheet" href="css/bank.css">
+</head>
+<body>
+    <!-- The counter: accounts on the left, the chosen account on the right (balance, activity, the operation). -->
+    <div id="bank" class="bank" hidden>
+        <aside class="col">
+            <div class="col-head">
+                <span class="lbl" id="branch"></span>
+                <h2 data-t="ui_your_accounts"></h2>
+            </div>
+            <div class="cash"><span class="lbl" data-t="ui_on_hand"></span><span class="money" id="cash"></span></div>
+            <div class="list" id="accounts"></div>
+            <div class="foot keys" id="col-keys"></div>
+        </aside>
+        <main class="main" id="main"></main>
+    </div>
+    <div class="sheet-wrap" id="sheet" hidden></div>
+    <div class="toasts" id="toasts"></div>
+    <script src="js/bank.js"></script>
+</body>
+</html>
